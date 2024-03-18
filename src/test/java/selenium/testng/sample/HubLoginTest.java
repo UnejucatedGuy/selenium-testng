@@ -25,6 +25,7 @@ public class HubLoginTest {
 
     @BeforeMethod
     public void setUp() {
+        System.setProperty("webdriver.chrome.driver","D:\\Geetanjali\\2023_24\\CSE_SEPM\\LabPlanandExpt\\chrome-win64\\chrome.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
